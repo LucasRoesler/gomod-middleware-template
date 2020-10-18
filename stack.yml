@@ -1,0 +1,16 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+# configuration:
+#   templates:
+#     - name: gomod-middleware
+#       source: https://github.com/LucasRoesler/gomod-middleware-template
+
+functions:
+  example:
+    lang: gomod-middleware
+    handler: ./example
+    image: gomod-middleware-example:latest
+

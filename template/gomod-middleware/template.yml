@@ -1,0 +1,11 @@
+language: gomod-middleware
+fprocess: ./handler
+welcome_message: |
+  You have created a new function which uses Golang 1.15 and modules.
+
+  The `main.go` is a generated file, all of your code should
+  go in the `handler` folder.
+
+  See more: https://docs.openfaas.com/cli/templates/
+  For detailed examples:
+  https://github.com/LucasRoesler/gomod-middleware
