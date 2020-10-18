@@ -1,5 +1,7 @@
 # Openfaas Go Module middleware
 
+[![GitHub Super-Linter](https://github.com/LucasRoesler/gomod-middleware-template/workflows/Lint%20and%20Test/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 This repository contains a function template for OpenFaaS that is designed for Go modules.
 
 The template is also designed so that your local Go environment will "just work"™️. It is structured
