@@ -35,3 +35,31 @@ configuration:
 ```
 
 Then edit the function logic in `myfunc/handler`.  The `main.go` is part of the template and should generally never be edited.
+
+
+## Build Args
+The template allows you to control version of Go, Alpine, and the Watchdog that are used in the build and final image.
+
+Add this to your function YAML to control the versions
+```yaml
+build_args:
+  GOTAG: 1.15-alpine3.12
+  WATCHDOGVERSION: 0.8.0
+  APLINETAG: 3.12
+  CGO_ENABLED: 0
+```
+
+
+## Multi-arch support
+You can also control the build and final architecture using the following build args, the defaults
+are show.
+
+
+```yaml
+TARGETPLATFORM: linux/amd64
+BUILDPLATFORM: linux/amd64
+TARGETOS: ""
+TARGETARCH: ""
+```
+
+The value of `TARGETOS` sets the value of `GOOS` during `go build`. Similarly, `TARGETARCH` sets the value of `GOARCH`.

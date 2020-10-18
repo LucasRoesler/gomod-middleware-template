@@ -13,4 +13,8 @@ functions:
     lang: gomod-middleware
     handler: ./example
     image: gomod-middleware-example:latest
+    build_args:
+      GOTAG: 1.15-alpine3.12
+      WATCHDOGVERSION: 0.8.0
+      APLINETAG: 3.12
 
