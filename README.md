@@ -22,9 +22,28 @@ Languages available as templates:
 
 ```sh
 $ faas-cli template pull https://github.com/LucasRoesler/gomod-middleware-template
-$ faas-cli new --lange gomod-middleware myfunc
+$ faas-cli new --lang gomod-middleware myfunc
+Folder: myfunc created.
+  ___                   _____           ____
+ / _ \ _ __   ___ _ __ |  ___|_ _  __ _/ ___|
+| | | | '_ \ / _ \ '_ \| |_ / _` |/ _` \___ \
+| |_| | |_) |  __/ | | |  _| (_| | (_| |___) |
+ \___/| .__/ \___|_| |_|_|  \__,_|\__,_|____/
+      |_|
 
 
+Function created in folder: myfunc
+Stack file written: myfunc.yml
+
+Notes:
+You have created a new function which uses Golang 1.15 and modules.
+
+The `main.go` is a generated file, all of your code should
+go in the `handler` folder.
+
+See more: https://docs.openfaas.com/cli/templates/
+For detailed examples:
+https://github.com/LucasRoesler/gomod-middleware-template
 ```
 
 Then, update your stack YAML to include

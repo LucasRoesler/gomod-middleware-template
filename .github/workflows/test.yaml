@@ -1,6 +1,10 @@
 name: Lint and Test
 on:
   push:
+    tags:
+      - v*
+    branches:
+      - main
   pull_request:
 jobs:
   lint:
@@ -15,6 +19,7 @@ jobs:
           DEFAULT_BRANCH: main
           VALIDATE_DOCKERFILE: true
           VALIDATE_YAML: true
+          VALIDATE_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v2
