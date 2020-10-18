@@ -1,3 +1,4 @@
+// main.go is a generated file, do not edit
 package main
 
 import (
